@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Case study: Embedding accessibility in design and delivery — Paul Cook."
+    />
+    <title>Case study: Inclusive by default — Paul Cook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="../index.html">Paul Cook</a>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="../index.html" data-nav>Work</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#accomplishments">Accomplishments</a></li>
+            <li><a href="../index.html#case-studies">Case studies</a></li>
+            <li><a href="../resume.html" data-nav>Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="article-body" style="max-width: 1100px; margin: 0 auto; padding: var(--space)">
+      <a class="back-link" href="../index.html#case-studies">← Back to work</a>
+      <header class="article-hero">
+        <p class="article-meta">Accessibility &amp; inclusion · Case study</p>
+        <h1>Inclusive by default</h1>
+        <p class="article-meta" style="margin-top: 0.5rem">
+          Moving accessibility from a late-stage audit to a shared standard in design, content,
+          and front-end delivery.
+        </p>
+      </header>
+      <article class="article-body">
+        <h2>Context</h2>
+        <p>
+          Releases were frequently “fixed” in a rushed remediation pass after accessibility came
+          up in QA or from a customer report. That pattern taxed engineering, embarrassed the
+          brand, and — most importantly — excluded users who rely on assistive technology or clear,
+          predictable interactions. The organization wanted universal access to be a design
+          principle, not a checkbox.
+        </p>
+        <div class="pullquote">
+          If inclusion is only inspected at the end, it is not inclusion — it is damage control.
+        </div>
+
+        <h2>My role</h2>
+        <p>
+          I partnered with design system owners and engineering leads to define what “done”
+          meant for accessibility, contributed IA and UI patterns that met WCAG-oriented criteria,
+          and helped socialize lightweight checks that teams could run before handoff.
+        </p>
+
+        <h2>Approach</h2>
+        <p>
+          <strong>Patterns before policing.</strong> We prioritized high-traffic components and
+          templates — forms, navigation, modals, data tables — and documented keyboard flows,
+          focus order, labels, and error handling so squads did not invent inconsistent
+          accessibility every sprint.
+        </p>
+        <p>
+          <strong>Shift left with clarity.</strong> Design critiques included accessibility
+          prompts (not lectures). Content designers weighed plain language and heading structure
+          as part of the same review where we already discussed tone and conversion.
+        </p>
+        <p>
+          <strong>Measure what matters.</strong> We tracked reduction in severity-1 and severity-2
+          issues found in release testing, time spent in remediations, and participation in
+          office hours — alongside qualitative feedback from internal advocates and users.
+        </p>
+
+        <div class="stats" role="list">
+          <div class="stat" role="listitem">
+            <strong>WCAG-aligned</strong>
+            <span>criteria tied to components</span>
+          </div>
+          <div class="stat" role="listitem">
+            <strong>Earlier fixes</strong>
+            <span>issues caught in design &amp; dev</span>
+          </div>
+          <div class="stat" role="listitem">
+            <strong>Shared ownership</strong>
+            <span>design, content, engineering</span>
+          </div>
+        </div>
+
+        <h2>Outcome</h2>
+        <p>
+          Critical accessibility escapes dropped release over release. Teams reported less
+          thrash: fewer “surprise” violations and more predictable effort in estimation. New
+          hires ramped faster because expectations lived in the system, not in tribal memory.
+        </p>
+
+        <h2>What I would tune next time</h2>
+        <p>
+          Even earlier partnership with legal and procurement on third-party tools — evaluating
+          vendor accessibility up front saves painful retrofitting later.
+        </p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <p><a href="../index.html">Paul Cook</a> · <a href="../index.html#case-studies">Case studies</a></p>
+    </footer>
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>
